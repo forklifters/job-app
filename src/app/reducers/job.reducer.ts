@@ -7,7 +7,6 @@ export const jobAdapter = createEntityAdapter<Job>();
 // Give out objects consistent structures using entity state
 // tslint:disable-next-line:no-empty-interface
 export interface State extends EntityState<Job> { }
-// Replaces object assing
 const defaultJob = {
     ids: ['123'],
     entities: {
@@ -18,9 +17,9 @@ const defaultJob = {
         }
     }
 };
-
+// ==============Getting default initial state object===========
 export const initialState: State = jobAdapter.getInitialState(defaultJob);
-
+// ============================ Reducer ========================
 export function jobReducer(
     state: State = initialState,
     action: actions.JobActions
