@@ -21,6 +21,7 @@ import { MatButtonModule } from '@angular/material';
 import { HttpClientModule } from '@angular/common/http/';
 import { ApolloModule } from 'apollo-angular';
 import { HttpLinkModule } from 'apollo-angular-link-http';
+import { RainbowDirective } from './directives/rainbow.directive';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { HttpLinkModule } from 'apollo-angular-link-http';
     JobEditComponent,
     JobItemComponent,
     JobComponent,
+    RainbowDirective
   ],
   imports: [
     BrowserModule,
@@ -48,7 +50,7 @@ import { HttpLinkModule } from 'apollo-angular-link-http';
     ReactiveFormsModule,
     routing
   ],
-  providers: [],
+  providers: [RainbowDirective],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
