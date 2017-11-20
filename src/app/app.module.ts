@@ -18,6 +18,9 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { reducers } from './reducers/index';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material';
+import { HttpClientModule } from '@angular/common/http/src/module';
+import { ApolloModule } from 'apollo-angular';
+import { HttpLinkModule } from 'apollo-angular-link-http';
 
 @NgModule({
   declarations: [
@@ -32,6 +35,9 @@ import { MatButtonModule } from '@angular/material';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    ApolloModule,
+    HttpLinkModule,
     MatButtonModule,
     BrowserAnimationsModule,
     StoreModule.forRoot(reducers),

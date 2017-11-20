@@ -14,18 +14,24 @@ export class JobPostingFormComponent implements OnInit {
     This componenet is responsible from getting the job information
     and creating jobs for the jobs list
   */
-  constructor(private store: Store<fromJobs.State>) { }
+  // constructor(private store: Store<fromJobs.State>) { }
+
+  constructor() {
+
+  }
 
   ngOnInit() {
   }
 
   createJobPosting() {
-    const job: Job = {
-      id: new Date().getUTCMilliseconds().toString(),
-      title: 'Testing',
-      desc: 'Testing'
-    };
-    this.store.dispatch(new actions.Create(job));
+    // NOTE: Implementation is for NgRx & Entity
+    // const job: Job = {
+    //   id: new Date().getUTCMilliseconds().toString(),
+    //   title: 'Testing',
+    //   desc: 'Testing'
+    // };
+    // this.store.dispatch(new actions.Create(job));
+
   }
 
 }

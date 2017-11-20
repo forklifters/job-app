@@ -11,6 +11,7 @@ export class JobItemComponent {
     This is a child component of the job feed
     This goal of this component is to design the
     inputs and outputs for the job items
+      - Acts as the Job description model
   */
   @Input() jobItem: Job;
   constructor() { }
