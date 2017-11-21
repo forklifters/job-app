@@ -1,5 +1,5 @@
 import { Action } from '@ngrx/store';
-import { Job } from '../models/job.model';
+import { Job } from '../models/job';
 
 export const CREATE         = '[Jobs] Create';
 export const UPDATE         = '[Jobs] Update';

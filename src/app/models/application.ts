@@ -1,4 +1,4 @@
-import { Job } from './job.model';
+import { Job } from './job';
 import { Status } from './status.enum';
 
 export class Application {
