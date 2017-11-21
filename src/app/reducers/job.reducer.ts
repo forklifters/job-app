@@ -1,7 +1,7 @@
 import * as actions from '../actions/job.actions';
 import { EntityState, createEntityAdapter } from '@ngrx/entity';
 import { createFeatureSelector } from '@ngrx/store';
-import { Job } from '../models/job.model';
+import { Job } from '../models/job';
 
 export const jobAdapter = createEntityAdapter<Job>();
 // Give out objects consistent structures using entity state
