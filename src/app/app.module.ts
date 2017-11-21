@@ -18,6 +18,10 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { reducers } from './reducers/index';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material';
+import { HttpClientModule } from '@angular/common/http/';
+import { ApolloModule } from 'apollo-angular';
+import { HttpLinkModule } from 'apollo-angular-link-http';
+import { RainbowDirective } from './directives/rainbow.directive';
 
 @NgModule({
   declarations: [
@@ -29,9 +33,13 @@ import { MatButtonModule } from '@angular/material';
     JobEditComponent,
     JobItemComponent,
     JobComponent,
+    RainbowDirective
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    ApolloModule,
+    HttpLinkModule,
     MatButtonModule,
     BrowserAnimationsModule,
     StoreModule.forRoot(reducers),
@@ -42,7 +50,7 @@ import { MatButtonModule } from '@angular/material';
     ReactiveFormsModule,
     routing
   ],
-  providers: [],
+  providers: [RainbowDirective],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

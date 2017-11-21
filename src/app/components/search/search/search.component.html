@@ -1,3 +1,7 @@
-<p>
-  search works!
-</p>
+<div class="searchContainer">
+    <form [formGroup]="jobForm" class="formFieldContainer">
+        <mat-form-field class="formField">
+          <input matInput placeholder="Type In Job Description Here..." formControlName="search" appRainbow>
+        </mat-form-field>
+      </form>
+</div>

@@ -1,4 +1,4 @@
-<h1>List of Jobs</h1>
-<div class="container" *ngFor="let job of jobs | async">
-  <app-job-item [jobItem]="job"></app-job-item>
-</div>
+<h1>Search Feed List</h1>
+  <div class="jobItemContainer" *ngFor="let job of jobs">
+    <app-job-item [jobItem]="job"></app-job-item>
+  </div>

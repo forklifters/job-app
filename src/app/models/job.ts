@@ -1,3 +1,4 @@
+import { Employer } from './employer';
 import { Application } from './application';
 
 /**
@@ -8,4 +9,5 @@ export class Job {
     title: string;
     desc: string;
     applications: Application[];
+    employer: Employer;
 }
